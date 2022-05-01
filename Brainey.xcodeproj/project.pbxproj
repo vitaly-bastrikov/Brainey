@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		260130AF2814EB4A00179F30 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260130AB2814EB4A00179F30 /* RootView.swift */; };
+		260130B02814EB4A00179F30 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260130AC2814EB4A00179F30 /* SettingsView.swift */; };
+		260130B12814EB4A00179F30 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260130AD2814EB4A00179F30 /* QuestionsView.swift */; };
+		260130B22814EB4A00179F30 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260130AE2814EB4A00179F30 /* StatisticView.swift */; };
+		2601574A280D0AF7007BC368 /* BraineyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26015749280D0AF7007BC368 /* BraineyApp.swift */; };
+		2601574E280D0AFB007BC368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2601574D280D0AFB007BC368 /* Assets.xcassets */; };
+		26015751280D0AFB007BC368 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26015750280D0AFB007BC368 /* Preview Assets.xcassets */; };
+		26015758280D0D67007BC368 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26015757280D0D66007BC368 /* Storyboard.storyboard */; };
+		26015763280E32B2007BC368 /* QuestionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26015762280E32B2007BC368 /* QuestionGenerator.swift */; };
+		26015765280E5EB5007BC368 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26015764280E5EB5007BC368 /* Constants.swift */; };
+		26015768280F5839007BC368 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 26015767280F5839007BC368 /* IQKeyboardManagerSwift */; };
+		26015772280FAAC0007BC368 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 26015771280FAAC0007BC368 /* FirebaseAuth */; };
+		26015774280FAAC0007BC368 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 26015773280FAAC0007BC368 /* FirebaseFirestore */; };
+		26035173281F02CC00F5D8FC /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26035172281F02CC00F5D8FC /* QuestionManager.swift */; };
+		26035175281F1CA500F5D8FC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26035174281F1CA400F5D8FC /* AppState.swift */; };
+		2603517B281F304000F5D8FC /* StatisticDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2603517A281F304000F5D8FC /* StatisticDetailView.swift */; };
+		2612FDE0281DEE9800BBF5AF /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612FDDF281DEE9800BBF5AF /* BarChart.swift */; };
+		2612FDE2281E0B6B00BBF5AF /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612FDE1281E0B6B00BBF5AF /* FirestoreManager.swift */; };
+		264CF03128122580001EA9AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 264CF03028122580001EA9AC /* GoogleService-Info.plist */; };
+		264CF03A28122DDF001EA9AC /* UserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CF03928122DDF001EA9AC /* UserResult.swift */; };
+		2686588F281A2878008A2080 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686588E281A2877008A2080 /* SoundManager.swift */; };
+		26865896281A2C59008A2080 /* countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26865894281A2C58008A2080 /* countdown.mp3 */; };
+		26865899281A2C7F008A2080 /* correctSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26865898281A2C7F008A2080 /* correctSound.mp3 */; };
+		2686589B281A2D10008A2080 /* wrongSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2686589A281A2D10008A2080 /* wrongSound.mp3 */; };
+		26C4BE65281501B30065F368 /* RoundData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4BE64281501B30065F368 /* RoundData.swift */; };
+		26C4BE6728150B490065F368 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4BE6628150B490065F368 /* ResultsView.swift */; };
+		26F5E2EF2812E87000AE95DC /* UtilsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5E2EE2812E86F00AE95DC /* UtilsManager.swift */; };
+		26F5E2F12812F42400AE95DC /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5E2F02812F42400AE95DC /* CustomSlider.swift */; };
+		26F5E2F42813302A00AE95DC /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5E2F32813302A00AE95DC /* CustomText.swift */; };
+		26F5E2F62813389C00AE95DC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5E2F52813389C00AE95DC /* CustomTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		260130AB2814EB4A00179F30 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		260130AC2814EB4A00179F30 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		260130AD2814EB4A00179F30 /* QuestionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+		260130AE2814EB4A00179F30 /* StatisticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		26015746280D0AF7007BC368 /* Brainey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26015749280D0AF7007BC368 /* BraineyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraineyApp.swift; sourceTree = "<group>"; };
+		2601574D280D0AFB007BC368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26015750280D0AFB007BC368 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26015757280D0D66007BC368 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		26015762280E32B2007BC368 /* QuestionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGenerator.swift; sourceTree = "<group>"; };
+		26015764280E5EB5007BC368 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		26035172281F02CC00F5D8FC /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
+		26035174281F1CA400F5D8FC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2603517A281F304000F5D8FC /* StatisticDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticDetailView.swift; sourceTree = "<group>"; };
+		2612FDDF281DEE9800BBF5AF /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		2612FDE1281E0B6B00BBF5AF /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		264CF03028122580001EA9AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Preview Content/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		264CF03928122DDF001EA9AC /* UserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResult.swift; sourceTree = "<group>"; };
+		2686588E281A2877008A2080 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		26865894281A2C58008A2080 /* countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countdown.mp3; sourceTree = "<group>"; };
+		26865898281A2C7F008A2080 /* correctSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctSound.mp3; sourceTree = "<group>"; };
+		2686589A281A2D10008A2080 /* wrongSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongSound.mp3; sourceTree = "<group>"; };
+		26C4BE64281501B30065F368 /* RoundData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundData.swift; sourceTree = "<group>"; };
+		26C4BE6628150B490065F368 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		26F5E2EE2812E86F00AE95DC /* UtilsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsManager.swift; sourceTree = "<group>"; };
+		26F5E2F02812F42400AE95DC /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		26F5E2F32813302A00AE95DC /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		26F5E2F52813389C00AE95DC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26015743280D0AF7007BC368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26015768280F5839007BC368 /* IQKeyboardManagerSwift in Frameworks */,
+				26015772280FAAC0007BC368 /* FirebaseAuth in Frameworks */,
+				26015774280FAAC0007BC368 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2601573D280D0AF7007BC368 = {
+			isa = PBXGroup;
+			children = (
+				26015748280D0AF7007BC368 /* Brainey */,
+				26015747280D0AF7007BC368 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26015747280D0AF7007BC368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26015746280D0AF7007BC368 /* Brainey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26015748280D0AF7007BC368 /* Brainey */ = {
+			isa = PBXGroup;
+			children = (
+				26865882281A1637008A2080 /* sound */,
+				26015749280D0AF7007BC368 /* BraineyApp.swift */,
+				26F5E2F22812F94B00AE95DC /* Custom Elements */,
+				264CF03828122DB6001EA9AC /* Service */,
+				2601576B280F5BEF007BC368 /* views */,
+				26015761280E327F007BC368 /* models */,
+				2601574D280D0AFB007BC368 /* Assets.xcassets */,
+				2601574F280D0AFB007BC368 /* Preview Content */,
+				264CF03028122580001EA9AC /* GoogleService-Info.plist */,
+				26015757280D0D66007BC368 /* Storyboard.storyboard */,
+			);
+			path = Brainey;
+			sourceTree = "<group>";
+		};
+		2601574F280D0AFB007BC368 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26015750280D0AFB007BC368 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26015761280E327F007BC368 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				264CF03928122DDF001EA9AC /* UserResult.swift */,
+				26C4BE64281501B30065F368 /* RoundData.swift */,
+				26035174281F1CA400F5D8FC /* AppState.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		2601576B280F5BEF007BC368 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				260130AB2814EB4A00179F30 /* RootView.swift */,
+				260130AC2814EB4A00179F30 /* SettingsView.swift */,
+				260130AD2814EB4A00179F30 /* QuestionsView.swift */,
+				26C4BE6628150B490065F368 /* ResultsView.swift */,
+				260130AE2814EB4A00179F30 /* StatisticView.swift */,
+				2612FDDF281DEE9800BBF5AF /* BarChart.swift */,
+				2603517A281F304000F5D8FC /* StatisticDetailView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		264CF03828122DB6001EA9AC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				26015762280E32B2007BC368 /* QuestionGenerator.swift */,
+				26015764280E5EB5007BC368 /* Constants.swift */,
+				26F5E2EE2812E86F00AE95DC /* UtilsManager.swift */,
+				2686588E281A2877008A2080 /* SoundManager.swift */,
+				2612FDE1281E0B6B00BBF5AF /* FirestoreManager.swift */,
+				26035172281F02CC00F5D8FC /* QuestionManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		26865882281A1637008A2080 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				26865894281A2C58008A2080 /* countdown.mp3 */,
+				2686589A281A2D10008A2080 /* wrongSound.mp3 */,
+				26865898281A2C7F008A2080 /* correctSound.mp3 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		26F5E2F22812F94B00AE95DC /* Custom Elements */ = {
+			isa = PBXGroup;
+			children = (
+				26F5E2F02812F42400AE95DC /* CustomSlider.swift */,
+				26F5E2F32813302A00AE95DC /* CustomText.swift */,
+				26F5E2F52813389C00AE95DC /* CustomTextField.swift */,
+			);
+			path = "Custom Elements";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26015745280D0AF7007BC368 /* Brainey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26015754280D0AFB007BC368 /* Build configuration list for PBXNativeTarget "Brainey" */;
+			buildPhases = (
+				26015742280D0AF7007BC368 /* Sources */,
+				26015743280D0AF7007BC368 /* Frameworks */,
+				26015744280D0AF7007BC368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brainey;
+			packageProductDependencies = (
+				26015767280F5839007BC368 /* IQKeyboardManagerSwift */,
+				26015771280FAAC0007BC368 /* FirebaseAuth */,
+				26015773280FAAC0007BC368 /* FirebaseFirestore */,
+			);
+			productName = Brainey;
+			productReference = 26015746280D0AF7007BC368 /* Brainey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2601573E280D0AF7007BC368 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					26015745280D0AF7007BC368 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 26015741280D0AF7007BC368 /* Build configuration list for PBXProject "Brainey" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2601573D280D0AF7007BC368;
+			packageReferences = (
+				26015766280F5839007BC368 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				26015770280FAAC0007BC368 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 26015747280D0AF7007BC368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26015745280D0AF7007BC368 /* Brainey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26015744280D0AF7007BC368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26015751280D0AFB007BC368 /* Preview Assets.xcassets in Resources */,
+				26865899281A2C7F008A2080 /* correctSound.mp3 in Resources */,
+				264CF03128122580001EA9AC /* GoogleService-Info.plist in Resources */,
+				2601574E280D0AFB007BC368 /* Assets.xcassets in Resources */,
+				2686589B281A2D10008A2080 /* wrongSound.mp3 in Resources */,
+				26865896281A2C59008A2080 /* countdown.mp3 in Resources */,
+				26015758280D0D67007BC368 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26015742280D0AF7007BC368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F5E2F62813389C00AE95DC /* CustomTextField.swift in Sources */,
+				26F5E2F42813302A00AE95DC /* CustomText.swift in Sources */,
+				26035175281F1CA500F5D8FC /* AppState.swift in Sources */,
+				26F5E2F12812F42400AE95DC /* CustomSlider.swift in Sources */,
+				26015763280E32B2007BC368 /* QuestionGenerator.swift in Sources */,
+				2601574A280D0AF7007BC368 /* BraineyApp.swift in Sources */,
+				26C4BE65281501B30065F368 /* RoundData.swift in Sources */,
+				264CF03A28122DDF001EA9AC /* UserResult.swift in Sources */,
+				26035173281F02CC00F5D8FC /* QuestionManager.swift in Sources */,
+				2612FDE2281E0B6B00BBF5AF /* FirestoreManager.swift in Sources */,
+				26F5E2EF2812E87000AE95DC /* UtilsManager.swift in Sources */,
+				26015765280E5EB5007BC368 /* Constants.swift in Sources */,
+				2612FDE0281DEE9800BBF5AF /* BarChart.swift in Sources */,
+				26C4BE6728150B490065F368 /* ResultsView.swift in Sources */,
+				2603517B281F304000F5D8FC /* StatisticDetailView.swift in Sources */,
+				260130B22814EB4A00179F30 /* StatisticView.swift in Sources */,
+				260130B12814EB4A00179F30 /* QuestionsView.swift in Sources */,
+				260130AF2814EB4A00179F30 /* RootView.swift in Sources */,
+				260130B02814EB4A00179F30 /* SettingsView.swift in Sources */,
+				2686588F281A2878008A2080 /* SoundManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26015752280D0AFB007BC368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26015753280D0AFB007BC368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26015755280D0AFB007BC368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brainey/Preview Content\"";
+				DEVELOPMENT_TEAM = SL8F4ZH337;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.bastrikov.Brainey;
+				PRODUCT_NAME = Brainey;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26015756280D0AFB007BC368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brainey/Preview Content\"";
+				DEVELOPMENT_TEAM = SL8F4ZH337;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.bastrikov.Brainey;
+				PRODUCT_NAME = Brainey;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26015741280D0AF7007BC368 /* Build configuration list for PBXProject "Brainey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26015752280D0AFB007BC368 /* Debug */,
+				26015753280D0AFB007BC368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26015754280D0AFB007BC368 /* Build configuration list for PBXNativeTarget "Brainey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26015755280D0AFB007BC368 /* Debug */,
+				26015756280D0AFB007BC368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26015766280F5839007BC368 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		26015770280FAAC0007BC368 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26015767280F5839007BC368 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26015766280F5839007BC368 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		26015771280FAAC0007BC368 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26015770280FAAC0007BC368 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		26015773280FAAC0007BC368 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26015770280FAAC0007BC368 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2601573E280D0AF7007BC368 /* Project object */;
+}
